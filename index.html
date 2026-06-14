@@ -3,20 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Las mentiras del dinero — Estudio Bíblico: La esperanza en Dios, no en las riquezas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Las mentiras del dinero — Estudio completo: La esperanza en Dios, no en las riquezas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #fefaf5;
-      font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
-      color: #2c2620;
-      line-height: 1.65;
+      background: #fef8f2;
+      font-family: 'Montserrat', sans-serif;
+      color: #2b241f;
+      line-height: 1.7;
     }
     :root {
       --accent: #b45f2b;
@@ -24,211 +20,42 @@
       --accent-light: #f9ede3;
       --muted: #5e4b3a;
       --card: #ffffff;
-      --shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
-      --border-radius: 1rem;
+      --shadow: 0 25px 40px -15px rgba(0,0,0,0.1);
+      --radius: 1.2rem;
     }
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-    .church-header {
-      text-align: center;
-      padding: 2rem 0 1rem;
-      border-bottom: 2px solid rgba(180,95,43,0.2);
-      margin-bottom: 2rem;
-    }
-    .church-name {
-      font-family: 'Merriweather', serif;
-      font-size: 2rem;
-      color: var(--accent);
-      font-weight: 700;
-    }
-    .church-motto {
-      color: var(--muted);
-      font-weight: 500;
-      letter-spacing: 1px;
-    }
+    .container { max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
+    .church-header { text-align: center; padding: 2rem 0 1rem; border-bottom: 3px solid var(--accent); margin-bottom: 2rem; }
+    .church-name { font-family: 'Merriweather', serif; font-size: 2.2rem; color: var(--accent); font-weight: 800; }
+    .church-motto { color: var(--muted); font-weight: 500; letter-spacing: 1px; }
     .hero {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      background: linear-gradient(135deg, #fff7ef, #fef0e5);
-      border-radius: var(--border-radius);
-      padding: 2.5rem;
-      margin-bottom: 2.5rem;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(180,95,43,0.15);
+      display: grid; grid-template-columns: 1fr; gap: 2rem;
+      background: linear-gradient(135deg, #fff9f2, #fef0e5);
+      border-radius: var(--radius); padding: 2.5rem; margin-bottom: 2.5rem;
+      box-shadow: var(--shadow); border: 1px solid rgba(180,95,43,0.2);
     }
-    @media (min-width: 800px) {
-      .hero {
-        grid-template-columns: 1.3fr 1fr;
-      }
-    }
-    .hero-content h1 {
-      font-family: 'Merriweather', serif;
-      font-size: 3rem;
-      font-weight: 800;
-      color: #3e2a1f;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-    .eyebrow {
-      background: var(--accent-light);
-      color: var(--accent-dark);
-      display: inline-block;
-      padding: 0.3rem 1rem;
-      border-radius: 2rem;
-      font-weight: 700;
-      font-size: 0.8rem;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-    }
-    .lead {
-      font-size: 1.2rem;
-      color: var(--muted);
-      margin-bottom: 1.8rem;
-      line-height: 1.5;
-    }
-    .hero-image-placeholder {
-      background: linear-gradient(125deg, var(--accent), #c27e4a);
-      border-radius: 1rem;
-      height: 100%;
-      min-height: 280px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-    }
-    .stats-box {
-      display: flex;
-      justify-content: space-around;
-      background: var(--card);
-      border-radius: 2rem;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-      gap: 1rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    }
-    .stat-item {
-      text-align: center;
-    }
-    .stat-number {
-      font-family: 'Merriweather', serif;
-      font-size: 2.4rem;
-      font-weight: 800;
-      color: var(--accent);
-    }
-    .magazine-layout {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    @media (min-width: 960px) {
-      .magazine-layout {
-        grid-template-columns: 2fr 1fr;
-      }
-    }
-    .card {
-      background: var(--card);
-      border-radius: var(--border-radius);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.05);
-      transition: all 0.2s;
-      border-left: 5px solid var(--accent);
-    }
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 1px solid #f0e2d6;
-      padding-bottom: 0.8rem;
-    }
-    .card-number {
-      background: var(--accent);
-      color: white;
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-    }
-    .card-title {
-      font-family: 'Merriweather', serif;
-      font-size: 1.8rem;
-      color: #2c2620;
-    }
-    .quote {
-      border-left: 4px solid var(--accent);
-      background: var(--accent-light);
-      padding: 1.2rem 1.8rem;
-      margin: 1.8rem 0;
-      border-radius: 0 20px 20px 0;
-      font-style: italic;
-    }
-    .quote-text {
-      font-family: 'Merriweather', serif;
-      font-size: 1.2rem;
-      color: #542f14;
-    }
-    .interactive {
-      background: #fdf4ea;
-      border-radius: 1rem;
-      padding: 1.2rem;
-      margin: 1.5rem 0;
-      cursor: pointer;
-      transition: 0.2s;
-      text-align: center;
-      border: 1px solid #e7cfbc;
-    }
-    .interactive:hover {
-      background: #f7e6d8;
-      transform: translateY(-2px);
-    }
-    .sidebar-card {
-      background: var(--card);
-      border-radius: 1rem;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
-    .tag {
-      background: var(--accent-light);
-      color: var(--accent-dark);
-      padding: 0.3rem 0.8rem;
-      border-radius: 2rem;
-      font-size: 0.8rem;
-      font-weight: 600;
-      display: inline-block;
-      margin: 0.2rem;
-    }
-    .footer {
-      text-align: center;
-      border-top: 1px solid #e2cfbe;
-      padding: 2rem;
-      margin-top: 2rem;
-      color: var(--muted);
-    }
-    @media (max-width: 700px) {
-      .hero-content h1 { font-size: 2rem; }
-      .card-title { font-size: 1.5rem; }
-    }
-    .fade-in {
-      animation: fadeSlide 0.5s ease forwards;
-    }
-    @keyframes fadeSlide {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
+    @media (min-width: 800px) { .hero { grid-template-columns: 1.3fr 1fr; } }
+    .hero-content h1 { font-family: 'Merriweather', serif; font-size: 3.2rem; font-weight: 800; color: #3a281c; line-height: 1.2; margin-bottom: 1rem; }
+    .eyebrow { background: var(--accent-light); color: var(--accent-dark); display: inline-block; padding: 0.3rem 1.2rem; border-radius: 2rem; font-weight: 700; font-size: 0.8rem; letter-spacing: 1.5px; margin-bottom: 1rem; }
+    .lead { font-size: 1.2rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .hero-image-placeholder { background: linear-gradient(135deg, var(--accent), #c27e4a); border-radius: 1rem; min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: white; padding: 2rem; box-shadow: var(--shadow); }
+    .stats-box { display: flex; justify-content: space-around; background: white; border-radius: 2rem; padding: 1.8rem; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+    .stat-number { font-family: 'Merriweather', serif; font-size: 2.8rem; font-weight: 800; color: var(--accent); }
+    .magazine-layout { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    @media (min-width: 960px) { .magazine-layout { grid-template-columns: 2fr 1fr; } }
+    .card { background: var(--card); border-radius: var(--radius); padding: 2.2rem; margin-bottom: 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.05); border-left: 6px solid var(--accent); transition: all 0.2s; }
+    .card-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.8rem; border-bottom: 2px solid #f0e2d6; padding-bottom: 0.8rem; }
+    .card-number { background: var(--accent); color: white; width: 2.8rem; height: 2.8rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.3rem; }
+    .card-title { font-family: 'Merriweather', serif; font-size: 1.9rem; color: #2b241f; }
+    .quote { border-left: 5px solid var(--accent); background: var(--accent-light); padding: 1.5rem 2rem; margin: 1.8rem 0; border-radius: 0 20px 20px 0; font-style: italic; }
+    .quote-text { font-family: 'Merriweather', serif; font-size: 1.2rem; color: #542f14; font-weight: 500; }
+    .interactive { background: #fdf4ea; border-radius: 1rem; padding: 1.2rem; margin: 1.8rem 0; cursor: pointer; transition: 0.2s; text-align: center; border: 1px solid #e7cfbc; font-weight: 500; }
+    .interactive:hover { background: #f7e6d8; transform: translateY(-3px); }
+    .sidebar-card { background: var(--card); border-radius: 1rem; padding: 1.8rem; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    .tag { background: var(--accent-light); color: var(--accent-dark); padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700; display: inline-block; margin: 0.2rem; }
+    .footer { text-align: center; border-top: 2px solid #e2cfbe; padding: 2rem; margin-top: 2rem; color: var(--muted); }
+    @media (max-width: 700px) { .hero-content h1 { font-size: 2rem; } .card-title { font-size: 1.5rem; } }
+    .fade-in { animation: fadeUp 0.6s ease forwards; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
@@ -240,145 +67,123 @@
 
   <section class="hero">
     <div class="hero-content">
-      <div class="eyebrow">Estudio Bíblico — Clase</div>
+      <div class="eyebrow">Estudio Bíblico — Clase Apologética</div>
       <h1>Las mentiras del dinero</h1>
-      <p class="lead">La esperanza del creyente debe estar puesta en Dios y no en las riquezas. Nadie puede servir a dos señores: no podemos servir a Dios y al dinero. El engaño de las riquezas ahoga la Palabra y nos roba lo eterno.</p>
-      <div class="interactive" onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">
-        <i class="fas fa-hand-holding-usd"></i> <strong>Comenzar estudio →</strong> Lucas 12:13-21, el hombre necio y su granero
-      </div>
+      <p class="lead">La esperanza del creyente debe estar puesta en Dios y no en las riquezas. No podemos servir a dos señores: no podemos servir a Dios y a Mamón. El engaño de las riquezas ahoga la Palabra y nos roba lo eterno.</p>
+      <div class="interactive" onclick="document.getElementById('epitafioInicio').scrollIntoView({behavior:'smooth'})"><i class="fas fa-skull"></i> Comenzar: El epitafio que estremece →</div>
     </div>
     <div class="hero-image-placeholder">
-      <i class="fas fa-coins" style="font-size: 3rem; margin-bottom: 1rem;"></i>
-      <h3>"La vida del hombre no consiste en la abundancia de sus bienes"</h3>
-      <p>Lucas 12:15</p>
+      <i class="fas fa-coins" style="font-size: 3.5rem; margin-bottom: 1rem;"></i>
+      <h3>"La vida del hombre no consiste en la abundancia de los bienes que posee"</h3>
+      <p>Lucas 12:15 — Jesús al avaricioso</p>
     </div>
   </section>
 
   <div class="stats-box">
-    <div class="stat-item"><div class="stat-number">1</div><div>Epitafio triste</div></div>
-    <div class="stat-item"><div class="stat-number">5×</div><div>"Mi, mis, míos"</div></div>
-    <div class="stat-item"><div class="stat-number">Necio</div><div>Corazón sin Dios</div></div>
-    <div class="stat-item"><div class="stat-number">Riquezas</div><div>Engaño mortal</div></div>
+    <div class="stat-item"><div class="stat-number">5×</div><div>"Mi, mis, míos" — el lenguaje del necio</div></div>
+    <div class="stat-item"><div class="stat-number">Necio</div><div>El que vive sin Dios</div></div>
+    <div class="stat-item"><div class="stat-number">Epitafio</div><div>"A nadie le importa"</div></div>
+    <div class="stat-item"><div class="stat-number">Tesoro</div><div>En el cielo o en la tierra</div></div>
   </div>
 
   <div class="magazine-layout">
     <main>
-      <!-- INTRO: EPITAFIOS Y EL HOMBRE DE LA TUMBA -->
-      <div class="card fade-in" id="intro">
-        <div class="card-header"><div class="card-number">1</div><h2 class="card-title">Un epitafio que duele</h2></div>
+      <!-- INTRO COMPLETA: EPITAFIOS Y EL HOMBRE DE LA TUMBA -->
+      <div class="card fade-in" id="epitafioInicio">
+        <div class="card-header"><div class="card-number">1</div><h2 class="card-title">Epitafios: lo que la tumba proclama</h2></div>
         <div class="card-content">
-          <p>Uno de los hábitos más comunes en diversas culturas es poner una frase en la tumba: el epitafio. Shakespeare: "Aquí yace un hombre que vivió y murió según sus propias reglas". Winston Churchill: "Aquí yace un hombre que nunca se rindió". Un pastor dijo: "He aquí un hombre que amó a Dios, amó al prójimo y cumplió la Gran Comisión". Pero no todos los epitafios son buenos. En un cementerio de Estados Unidos, una pequeña tumba tiene grabado:</p>
-          <div class="quote"><div class="quote-text">“Aquí descansa un miserable que vivió para sí mismo. Este hombre no se preocupó por nada, excepto por acumular riquezas, donde está ahora, o qué está enfrentando, nadie lo sabe, y en realidad, a nadie le importa.”</div></div>
-          <p>Eso suena horrible. Habla de una vida desperdiciada. Me imagino a alguien con recursos suficientes, pero obsesionado con hacerse rico. Se levantaba temprano, se acostaba tarde. No tenía tiempo para sus hijos, menos para su esposa. En casa no faltaba nada material, pero faltaba papá. Se perdió el primer día de escuela, graduaciones, cumpleaños. Cubría su ausencia con regalos. Al final consiguió riquezas, pero al levantar la mirada, no tenía a nadie con quien compartirlas. Un corazón vacío no se llena con los bolsillos llenos.</p>
-          <p>Nuestra tendencia natural es ser como ese hombre: despreciar lo más importante por lo menos importante. La sociedad mide el valor de una persona por sus bienes, pero el problema no es el dinero, sino el amor al dinero y la avaricia. Para ser avaricioso no hace falta ser rico; un pobre puede ser egoísta y codicioso. Jesús nos advirtió: <strong>“Mirad, y guardaos de toda avaricia; porque la vida del hombre no consiste en la abundancia de los bienes que posee”</strong> (Lucas 12:15).</p>
-          <div class="interactive" onclick="toggleEpitafio()"><i class="fas fa-cross"></i> <strong>Reflexiona:</strong> ¿Qué te gustaría que dijeran en tu epitafio? (haz clic)</div>
-          <div id="epitafioReflex" style="display: none; margin-top: 1rem; padding: 1rem; background: #fef0e5; border-radius: 1rem;">Si tuviéramos que escribir hoy un epitafio de tu vida, ¿diría que viviste para ti o para Dios? El engaño de las riquezas nos ciega, nos hace quitar la mirada de la eternidad. Todos estamos en peligro de terminar como el desconocido de la tumba, a quien nadie le importa.</div>
+          <p>Uno de los hábitos más comunes en las diversas culturas es poner una frase en la tumba de las personas, una frase que lo identifique, y que sirva de recordatorio. Esto es llamado un epitafio. ¿Alguna vez has pensado en qué te gustaría que pusieran en tu epitafio? Es decir, ¿Qué te gustaría que pusieran en tu tumba una vez que hayas muerto?</p>
+          <p>William Shakespeare, el autor de la famosa obra Romeo y Julieta, tiene en el epitafio de su tumba escrito: <strong>“Aquí yace un hombre que vivió y murió según sus propias reglas.”</strong> Winston Churchill, quien fuera primer ministro británico durante la Segunda Guerra Mundial: <strong>“Aquí yace un hombre que nunca se rindió.”</strong> Un pastor dijo una vez en una conferencia que cuando él muriera, le gustaría que pusieran en su tumba: <strong>“He aquí un hombre que amó a Dios, amó al prójimo y cumplió la Gran Comisión”.</strong></p>
+          <p>Ahora bien, es interesante notar que no todos los epitafios son buenos, como mismo no todas las vidas son buenas. En un cementerio de los Estados Unidos, en una pequeña tumba, está gravado el siguiente epitafio: <strong>“Aquí descansa un miserable que vivió para sí mismo. Este hombre no se preocupó por nada, excepto por acumular riquezas, donde está ahora, o qué está enfrentando, nadie lo sabe, y en realidad, a nadie le importa.”</strong></p>
+          <div class="quote"><div class="quote-text">Eso suena horrible. Habla de una vida desperdiciada. Me imagino a alguien con recursos económicos suficientes para vivir de manera estable con su familia. Sin embargo, no sentía que eso era suficiente. Este hombre se obsesionó con la idea de hacerse rico. Como en la película “La última vida” donde el protagonista, siendo adolescente, se obsesionó con la idea de volverse millonario. Lo consiguió, pero en el camino aplastó muchas personas, y sobre todo a su familia.</div></div>
+          <p>Yo me imagino que la vida del desconocido de la tumba, al que a nadie le importa, fue algo así. Un maniático del trabajo. Se levantaba temprano, se acostaba tarde. No tenía tiempo para sus hijos, y menos para su esposa. En casa no faltaba nada, materialmente hablando, pero faltaba la presencia de papá. Me imagino que esta persona se perdió los momentos más importantes de la vida de sus hijos: primer día en la escuela, graduación, algún juego importante, y hasta algún que otro cumpleaños. En el camino, trataba de cubrir su ausencia con regalos. Al final de sus días, consiguió lo que tanto deseaba: riquezas. Pero al levantar la mirada, se dio cuenta de que no tenía a nadie con quien compartirlas. En realidad, nadie le amaba genuinamente. <strong>Un corazón vacío no se llena con los bolsillos llenos.</strong></p>
+          <p>Es una vida triste hermanos, pero nuestra tendencia natural es a ser como este hombre. Tendemos a despreciar las cosas más importantes de la vida, a cambio de las cosas menos importantes. En la sociedad actual, el hombre ha depositado su confianza en las riquezas, en el afán, en el trabajo, en la prosperidad. El valor de una persona es medido por la cantidad de bienes que posee, cuando abundan las riquezas, abundan los amigos para ayudarte a gastarlas. Y el problema mayor no es el dinero, sino el amor al dinero y la avaricia. El dinero no es malo, nosotros nos volvemos malos cuando nos obsesionamos con él. Nuestra sociedad es avariciosa, y para ser avaricioso, no es necesario ser rico, un pobre puede ser avaricioso, y ser egoísta, y pensar solo en él, y aun así ser pobre; esto es un problema del corazón.</p>
+          <div class="interactive" onclick="toggleEpitafioCompleto()"><i class="fas fa-cross"></i> Reflexión: ¿Será ese mi epitafio si sigo viviendo para acumular?</div>
+          <div id="epitafioExtra" style="display:none; margin-top:1rem; background:#fef0e5; padding:1rem; border-radius:1rem;">Jesús nos advirtió: "Mirad, guardaos de toda avaricia; porque la vida del hombre no consiste en la abundancia de los bienes que posee" (Lucas 12:15). Todos estamos en peligro de ser seducidos por el engaño de las riquezas, y terminar nuestros días como el desconocido de la tumba, a quien nadie le importa. Por eso predicamos: "Las mentiras del dinero".</div>
         </div>
       </div>
 
-      <!-- PARÁBOLA DEL RICO NEGOCIO: LUCAS 12 -->
+      <!-- PARÁBOLA COMPLETA DEL RICO NECIO (LUCAS 12:13-21) -->
       <div class="card fade-in">
-        <div class="card-header"><div class="card-number">2</div><h2 class="card-title">La parábola del necio rico</h2></div>
+        <div class="card-header"><div class="card-number">2</div><h2 class="card-title">La parábola del hombre necio: el engaño de las riquezas</h2></div>
         <div class="card-content">
-          <p><strong>Lucas 12:13–21</strong> — Un hombre de la multitud le pide a Jesús: "Maestro, di a mi hermano que parta conmigo la herencia". Jesús responde: "Hombre, ¿quién me ha puesto sobre vosotros como juez o partidor?" Y les dice: "Mirad, guardaos de toda avaricia". Luego cuenta la parábola:</p>
-          <div class="quote"><div class="quote-text">“La heredad de un hombre rico había producido mucho. Y él pensaba dentro de sí, diciendo: ¿Qué haré, porque no tengo dónde guardar mis frutos? Y dijo: Esto haré: derribaré mis graneros, los edificaré mayores, y allí guardaré todos mis frutos y mis bienes; y diré a mi alma: Alma, muchos bienes tienes guardados para muchos años; repósate, come, bebe, regocíjate. Pero Dios le dijo: Necio, esta noche vienen a pedirte tu alma; y lo que has provisto, ¿de quién será? Así es el que hace para sí tesoro, y no es rico para con Dios.”</div></div>
-          <p><strong>Cinco veces</strong> habla de "mi": mi fruto, mi grano, mis graneros, mis bienes, mi alma. No hay gratitud a Dios, no hay diezmo ni ofrenda, no hay memoria de los pobres. La avaricia es acaparar los recursos que Dios nos da para nosotros solos. El engaño de las riquezas trabaja en tres niveles: <strong>1)</strong> Te susurra seguridad falsa: "Alma, descansa, come, bebe". <strong>2)</strong> Te miente sobre la identidad: tu valor está en lo que posees. <strong>3)</strong> Te engaña sobre la eternidad: "muchos años". El necio olvidó que la muerte llama sin preguntar el saldo de tu cuenta. Jesús llama "necio" a quien vive apartado de Dios (Salmo 14:1).</p>
-          <p>Este hombre almacenaba grano para venderlo caro en tiempos de hambre, sin importarle los necesitados. El engaño de las riquezas nos hace hacer cualquier cosa para conseguirlas: sobornar, mentir, engañar. El problema no son las riquezas, sino el corazón. Conozco ricos que tienen a Dios como lo primero, pero este hombre no. La crítica de Dios no es por tener, sino por poner las riquezas por encima de Él.</p>
-          <div class="interactive" onclick="toggleAplicacionRico()"><i class="fas fa-church"></i> Aplicación: ¿Somos como el necio rico en nuestra iglesia?</div>
-          <div id="aplicRico" style="display:none; margin-top:1rem; background:#f9ede3; padding:1rem; border-radius:1rem;">La sociedad consumista nos ha envuelto. Muchos creyentes abandonan la iglesia cuando prosperan. Dejan de congregarse para cuidar la casa, se van al turismo y pierden su matrimonio, se lanzan en busca de riquezas y abandonan a su familia. El engaño de las riquezas ahoga la palabra de Dios (Mateo 13:22). No damos porque Dios nos va a dar; damos porque Él nos ha dado. El amor al dinero es raíz de todos los males (1 Timoteo 6:10). Dios ama al dador alegre, y ser enriquecidos para ser generosos (2 Corintios 9:11).</div>
+          <p><strong>Lucas 12:13-21</strong> — Le dijo uno de la multitud: Maestro, di a mi hermano que parta conmigo la herencia. Mas él le dijo: Hombre, ¿quién me ha puesto sobre vosotros como juez o partidor? Y les dijo: <strong>Mirad, y guardaos de toda avaricia; porque la vida del hombre no consiste en la abundancia de los bienes que posee.</strong> También les refirió una parábola, diciendo: La heredad de un hombre rico había producido mucho. Y él pensaba dentro de sí, diciendo: ¿Qué haré, porque no tengo dónde guardar mis frutos? Y dijo: Esto haré: derribaré mis graneros, y los edificaré mayores, y allí guardaré todos mis frutos y mis bienes; y diré a mi alma: Alma, muchos bienes tienes guardados para muchos años; repósate, come, bebe, regocíjate. Pero Dios le dijo: <strong>Necio, esta noche vienen a pedirte tu alma; y lo que has provisto, ¿de quién será?</strong> Así es el que hace para sí tesoro, y no es rico para con Dios.</p>
+          <p>Jesús estaba identificando frente a sí a un avaricioso en potencia. Pero sabía que toda la multitud tenía este mismo problema. Jesús dice: "Pónganse a la guardia, velen, manténganse alerta contra <strong>toda</strong> avaricia". El verbo griego indica: manténganse en alerta, constantemente, contra todo tipo de avaricia. Hay diversas formas de ser avaricioso. La avaricia es la obsesión o el deseo de enriquecerse pensando solo en el beneficio personal. Es prima hermana de la codicia, y una amiga inseparable del egoísmo. La persona avariciosa siempre piensa en sí misma, en detrimento de los demás. No le interesa su familia, no le interesan sus hermanos, no le conmueve el hambre mundial, solo piensa en sí mismo.</p>
+          <div class="quote"><div class="quote-text">En cinco ocasiones en los versos del 17 al 19 este hombre habla de lo que él hará, como si él lo poseyera todo. En la cultura judía, era sabido que un diez por ciento de la cosecha pertenecía a Dios, una parte del grano era dejada en el campo para los pobres, se entregaban las primicias del campo a Dios, sin embargo, este hombre habla de <strong>mi fruto, mi grano, mis graneros, mis bienes y mi alma.</strong> Este hombre no estaba pensando en compartir de su abundancia, sino guardarlo para su uso privado. Su meta era jubilarse antes de tiempo, vivir la vida. No siente preocupación o cuidado por nadie más.</div></div>
+          <p><strong>El engaño de las riquezas trabaja en tres niveles, y esta parábola los muestra con claridad.</strong> Primero, te susurra una mentira sobre la seguridad. "Alma, descansa, come, bebe". Te hace sentir que lo tienes todo bajo control. Pero esa seguridad es un espejismo; una jaula de oro sigue siendo una jaula. La segunda mentira es sobre la identidad. El hombre creyó que su valor estaba en la abundancia de sus bienes. Pero Jesús ya lo había dicho: la vida no consiste en lo que posees. Tu valor no se mide por lo que tienes, sino por aquel a quien perteneces. Y la tercera, la más profunda, es la mentira sobre la eternidad. "Muchos bienes para muchos años". Creyó que el tiempo le pertenecía. <strong>El que vive solo para el ahora, muere sin un mañana.</strong> El necio olvidó que la muerte llama a la puerta sin preguntar el saldo de tu cuenta. He aquí un hombre que ganó el mundo, pero perdió lo más importante: su alma.</p>
+          <p>Piensen en esto: ¿Qué haría este hombre con todo ese grano? Almacenaba para el momento en que el grano se acabara, para la plaga, para el hambre. Cuando nadie tuviera, él tendría, y podría venderlo al precio que quisiera. <strong>El engaño de las riquezas nos hace hacer cualquier cosa para conseguirlas. Aunque lo que hagamos no sea noble.</strong> Para obtener riquezas, las personas comienzan a sobornar, a mentir, a engañar, y en los peores casos pueden llegar a matar. Este hombre ambicioso solo pensaba en él. El problema no eran las riquezas, era su corazón. Conozco personas ricas que tienen a Dios como lo primero, pero este hombre no era así. La crítica de Dios no es por tener riquezas, sino por ponerlas por encima de Dios, al punto de no tenerle en su vida.</p>
+          <div class="interactive" onclick="toggleAvariciaIglesia()"><i class="fas fa-church"></i> Aplicación directa: "El engaño de las riquezas en la iglesia de hoy"</div>
+          <div id="avariciaIglesiaText" style="display:none; margin-top:1rem; background:#faf0e8; padding:1rem; border-radius:1rem;">He visto a muchas personas apartarse de la iglesia en el momento en que prosperan. Cuando no tienen nada, claman a Dios, y cuando Dios los prospera, entonces lo abandonan. Conocí a una persona en mi pueblo natal que dejó de congregarse para cuidar la casa que Dios le había dado, por miedo a que le robaran. Cuántas personas se van a trabajar al turismo, y dejan de congregarse, y pierden sus matrimonios. Cuántas personas se lanzan a una misión en busca de riquezas, y abandonan a su familia. El engaño de las riquezas nos ciega hermanos, y tristemente, hoy en día, al igual que en el siglo primero, ahoga la palabra de Dios. Hemos escuchado la palabra, pero estamos tan engañados que no nos importa el necesitado. No damos porque Dios nos va a dar; damos porque Dios nos ha dado. "Más bienaventurado es dar que recibir" (Hechos 20:35).</div>
         </div>
       </div>
 
-      <!-- EL ENGAÑO Y LA AVARICIA EN LA IGLESIA -->
+      <!-- EL ENGAÑO: MATEO 13:22, LAS TRES MENTIRAS -->
       <div class="card fade-in">
         <div class="card-header"><div class="card-number">3</div><h2 class="card-title">Las mentiras del dinero: seguridad, identidad, eternidad</h2></div>
         <div class="card-content">
-          <p>Jesús dijo: <strong>“El que fue sembrado entre espinos, éste es el que oye la palabra, pero el afán de este siglo y el engaño de las riquezas ahogan la palabra, y se hace infructuosa”</strong> (Mateo 13:22). No son las riquezas, sino <em>el engaño de las riquezas</em> lo que nos destruye. ¿Cuál es el engaño? Nos hace creer que el dinero puede llenar todas nuestras necesidades, darnos paz, seguridad. Pero la paz no está en la cuenta bancaria; está en Cristo.</p>
-          <ul style="margin: 1rem 0 1rem 2rem;">
-            <li><i class="fas fa-ban" style="color:var(--accent);"></i> <strong>Mentira #1:</strong> "Con suficiente dinero tendré seguridad". Realidad: esta noche tu alma será reclamada.</li>
-            <li><i class="fas fa-ban" style="color:var(--accent);"></i> <strong>Mentira #2:</strong> "Mi valor está en lo que poseo". Realidad: la vida no consiste en la abundancia de bienes.</li>
-            <li><i class="fas fa-ban" style="color:var(--accent);"></i> <strong>Mentira #3:</strong> "Tengo muchos años por delante". Realidad: la muerte llega sin avisar.</li>
+          <p>Jesús dijo en Mateo 13:22: <strong>“El que fue sembrado entre espinos, éste es el que oye la palabra, pero el afán de este siglo y el engaño de las riquezas ahogan la palabra, y se hace infructuosa.”</strong> Me llama mucho la atención que Jesús no dice que las riquezas ahogaron la palabra; es <strong>el engaño de las riquezas</strong> lo que ahogó la palabra y no permitió que diera fruto. ¿Cuál es el engaño de las riquezas hermanos? Nos hace creer que puede llenar todas nuestras necesidades. El engaño de las riquezas es que nos hace creer que cuando tengamos suficiente dinero, tendremos paz. Que cuando nuestra cuenta esté segura, nuestra vida también lo estará. Las riquezas nos engañan de tal manera, que he visto incluso a muchos pastores desviarse tras sus mentiras. Nos hace afanarnos, y obsesionarnos al punto que solo pensamos en ganar, ganar, ganar. ¿Cuál es el problema? Simple, que no hay Dios en ese estilo de vida. El engaño de las riquezas ahoga la palabra de Dios, nos hace quitar la mirada de la eternidad para ponerla en el aquí y ahora. No nos deja pensar siquiera en las personas que amamos y vemos, cuánto más en Dios.</p>
+          <ul style="margin: 1.2rem 0 1.2rem 2rem;">
+            <li><i class="fas fa-shield-alt" style="color:var(--accent);"></i> <strong>Mentira #1 – Seguridad:</strong> “Alma, descansa, come, bebe” – pero Dios dice: “Necio, esta noche”</li>
+            <li><i class="fas fa-id-card" style="color:var(--accent);"></i> <strong>Mentira #2 – Identidad:</strong> Tu valor está en tu cuenta bancaria → Falso: la vida no consiste en bienes.</li>
+            <li><i class="fas fa-hourglass-half" style="color:var(--accent);"></i> <strong>Mentira #3 – Eternidad:</strong> “Muchos años” → el tiempo no te pertenece, la muerte llega sin avisar.</li>
           </ul>
-          <p>La avaricia es prima hermana de la codicia, amiga inseparable del egoísmo. La persona avariciosa siempre piensa en sí misma en detrimento de los demás. Y no solo en dinero: podemos ser avariciosos con nuestro tiempo, talentos, dones. Jesús nos llama a estar alerta contra <em>toda</em> avaricia. El necio de la parábola no pensó en los pobres, no pensó en su familia eterna. "Así es el que hace para sí tesoro, y no es rico para con Dios."</p>
-          <div class="quote"><div class="quote-text">“No temáis, manada pequeña, porque a vuestro Padre le ha placido daros el reino. Vended lo que poseéis, y dad limosna; haceos bolsas que no se envejezcan, tesoro en los cielos que no se agote.” (Lucas 12:32-33)</div></div>
+          <p>La avaricia puede venir disfrazada de diversas formas, quizás con sombras de justicia: "es que yo merezco una parte de la herencia", o "cuando yo haga este negocio y tenga dinero, entonces sí voy a ayudar a las personas, cuando prospere voy a dar". No funciona así, todo eso es avaricia. El cristiano de hoy es prosperado, y al ser prosperado da aún más; somos prosperados para bendecir aún más que antes. Uno puede ser avaricioso con respecto a otras personas, con respecto a nuestros dones y talentos y querer usarlos únicamente para nosotros. Jesús dijo: estén muy atentos contra <strong>todo tipo de avaricia.</strong> Pues la vida del hombre no consiste en la abundancia de los bienes que posee. Es un ataque directo a nuestra sociedad consumista.</p>
+          <div class="quote"><div class="quote-text">“Las riquezas traen muchos amigos; mas el pobre es apartado de su amigo.” (Proverbios 19:4) – Si tus amigos vienen a ti por tus riquezas, no son en realidad tus amigos, son personas interesadas, que han medido tu valor por la abundancia de bienes que posees. Mira al pobre, y observa que son pocos sus amigos, pero en muchos casos, más sinceros.</div></div>
         </div>
       </div>
 
-      <!-- EJEMPLOS DE FE: MOISÉS, ABRAHAM, PABLO -->
+      <!-- EJEMPLOS BÍBLICOS: MOISÉS, ABRAHAM, PABLO, JOSÉ -->
       <div class="card fade-in">
-        <div class="card-header"><div class="card-number">4</div><h2 class="card-title">El cristiano debe poner su confianza en Dios</h2></div>
+        <div class="card-header"><div class="card-number">4</div><h2 class="card-title">El cristiano debe poner su esperanza en Dios</h2></div>
         <div class="card-content">
-          <p>A diferencia del necio, la Biblia está llena de hombres y mujeres que pusieron su esperanza en Dios, no en las riquezas. <strong>Abraham</strong> renunció al botín de Sodoma para que nadie dijera "yo enriquecí a Abram", y Dios le respondió: "Yo soy tu escudo, y tu galardón será sobremanera grande" (Génesis 15:1). <strong>José</strong> administró riquezas enormes en Egipto, pero nunca apartó su mirada de Dios. <strong>Moisés</strong> rehusó llamarse hijo de la hija de Faraón, escogiendo ser maltratado con el pueblo de Dios antes que gozar de los deleites temporales del pecado, "teniendo por mayores riquezas el vituperio de Cristo que los tesoros de los egipcios; porque tenía puesta la mirada en el galardón" (Hebreos 11:24-26).</p>
-          <p><strong>Pablo</strong> aprendió a vivir con abundancia y con hambre: "Todo lo puedo en Cristo que me fortalece" (Filipenses 4:13). No fue engañado por las mentiras del dinero. Su esperanza estaba en la resurrección, no en el balance bancario. El uso del dinero ilustra la realidad de nuestro corazón. ¿Dónde está tu tesoro? Porque donde está tu tesoro, allí estará también tu corazón (Lucas 12:34).</p>
-          <div class="interactive" onclick="toggleMoisés()"><i class="fas fa-eye"></i> "Moisés se sostuvo como viendo al Invisible" – ¿y nosotros?</div>
-          <div id="moisesRef" style="display:none; margin-top:1rem; background:#faf0e8; padding:1rem; border-radius:1rem;">Moisés rechazó los tesoros de Egipto porque su mirada estaba en la recompensa eterna. Cuando vivimos con la mirada puesta en la eternidad, las riquezas pierden su poder de engaño. No servimos al dinero, sino al Dios vivo. Nuestra esperanza no avergüenza, porque Cristo resucitó y vive.</div>
+          <p>A diferencia del necio, la Biblia está llena de ejemplos de personas entregadas, que vivieron su vida con la mirada puesta en la eternidad. Personas que estaban conscientes de lo efímero de la vida, y de la necedad de ser rico para con los hombres, y pobre para con Dios. <strong>Abraham</strong> renunció al tesoro de Sodoma y Gomorra tras ganar la guerra contra los cinco reyes, para que el rey no pudiera decir "yo enriquecí a Abraham". Esa misma noche Dios le dijo: "No temas, Abram; yo soy tu escudo, y tu galardón será sobremanera grande" (Génesis 15:1). <strong>José</strong> administró honradamente las riquezas ajenas, hizo que Potifar prosperara, que la cárcel prosperara, e hizo que el reino de Egipto se enriqueciera como nunca antes, y en todo el proceso nunca quitó la mirada de Dios.</p>
+          <p><strong>Pablo</strong> dijo que había aprendido a tener abundancia, y a pasar hambre; estaba preparado para todo: "Todo lo puedo en Cristo que me fortalece" (Filipenses 4:13). <strong>Moisés:</strong> "Por la fe Moisés, hecho ya grande, rehusó llamarse hijo de la hija de Faraón, escogiendo antes ser maltratado con el pueblo de Dios, que gozar de los deleites temporales del pecado, teniendo por mayores riquezas el vituperio de Cristo que los tesoros de los egipcios; porque tenía puesta la mirada en el galardón" (Hebreos 11:24-26). Este hombre rechazó los tesoros de los egipcios, porque tenía la mirada puesta en un tesoro más grande; durante toda su vida se sostuvo como viendo al invisible, porque su esperanza estaba puesta en Dios, y no en las riquezas. <strong>Moisés no despreció el palacio porque odiara el oro; lo cambió porque vio un tesoro que el oro no puede comprar.</strong></p>
+          <div class="quote"><div class="quote-text">Estos hombres, y muchos más, no se dejaron engañar por las mentiras de la riqueza. No les creyeron cuando les ofrecieron seguridad y estabilidad, no se tragaron el cuento de que con ellas obtendrían paz. ¿Sabes por qué? Porque tenían la mirada puesta en la eternidad, tenían la mirada puesta en Dios y en su reino. Lo eterno pesaba más para ellos que lo terrenal. Su reino no era de este mundo. Buscaban y anhelaban una patria celestial.</div></div>
         </div>
       </div>
 
-      <!-- EPITAFIOS CRISTIANOS Y CONCLUSIÓN -->
+      <!-- EPITAFIOS CRISTIANOS Y CONCLUSIÓN PODEROSA -->
       <div class="card fade-in">
-        <div class="card-header"><div class="card-number">5</div><h2 class="card-title">Conclusión: ¿Dónde está tu esperanza?</h2></div>
+        <div class="card-header"><div class="card-number">5</div><h2 class="card-title">Conclusión: ¿Dónde está tu esperanza? Elige tu epitafio</h2></div>
         <div class="card-content">
-          <p>El Salmo 39:4-7 nos da la visión sabia: <strong>"Hazme saber, Señor, el límite de mis días... Muy breve es la vida. Ilusorias son las riquezas que amontona... Y ahora, Señor, ¿qué esperanza me queda? ¡Mi esperanza he puesto en ti!"</strong></p>
-          <p>En contraste con el epitafio del miserable, tenemos tumbas que proclaman fe: <em>Charles Gordon</em>: "dio su fuerza a los débiles, su esencia a los pobres, su corazón a Dios". <em>Martin Luther King</em>: "murió por una causa en la que creía". <em>John Wesley</em>: "un pecador salvado por la gracia". <em>Billy Graham</em>: "He corrido la carrera, he guardado la fe, ahora me espera la corona".</p>
-          <div class="quote"><div class="quote-text">“Su señor le dijo: Bien, buen siervo y fiel; sobre poco has sido fiel, sobre mucho te pondré; entra en el gozo de tu señor.” (Mateo 25:23)</div></div>
-          <p>La tumba de Jesús está vacía. No puede haber un epitafio porque Él vive. Por eso nuestra esperanza es firme: Cristo murió y resucitó, nos liberó de la esclavitud del pecado y de la avaricia. Ahora podemos vivir con la mirada puesta en lo eterno, como Moisés, como Pablo. No podemos servir a dos señores. Si al final de tus días miras atrás y ves que amaste a Dios y no a las riquezas, que invertiste en tu familia, en el reino, en lo que nunca se pierde, entonces podrás escoger un buen epitafio, o mejor aún, oirás las palabras: "Bien, buen siervo y fiel, entra en el gozo de tu Señor".</p>
-          <p style="margin-top: 1.5rem; font-weight: 600;">Rolando Yohamed Desdín García. Que Dios te bendiga.</p>
+          <p>Los salmos presentan un contraste entre lo temporal de nuestra existencia y la eternidad de Dios. David dice en Salmo 39:4-7: <strong>“Hazme saber, Señor, el límite de mis días, y el tiempo que me queda por vivir; hazme saber lo efímero que soy. Muy breve es la vida que me has dado; ante ti, mis años no son nada. Un soplo nada más es el mortal, un suspiro que se pierde entre las sombras. Ilusorias son las riquezas que amontona, pues no sabe quién se quedará con ellas. Y ahora, Señor, ¿qué esperanza me queda? ¡Mi esperanza he puesto en ti!”</strong> Debido a lo corta que es nuestra vida, es tonto acumular riquezas para nosotros mismos. David, un rey próspero, dice: mi esperanza no está puesta en las riquezas, mi esperanza está puesta en ti, mi esperanza está puesta en Dios.</p>
+          <p>En fuerte contraste con la avaricia del hombre desconocido, tenemos epitafios que hablan de fe. En una catedral de Londres: <strong>“Consagrado a la memoria del general Charles George Gordon, quien en todo tiempo y en todo lugar dio su fuerza a los débiles, su esencia a los pobres, su empatía a los que sufrían y su corazón a Dios.”</strong> En la tumba de Martin Luther King: <strong>“Aquí yace un hombre que murió por una causa en la que creía."</strong> En la de Martín Lutero: <strong>“Aquel que busca a Cristo, encontrará aquí su tesoro."</strong> En la de John Wesley: <strong>“Aquí yace John Wesley, un pecador salvado por la gracia de Dios."</strong> Billy Graham: <strong>“He llegado al final de mi viaje. He corrido la carrera. He guardado la fe. Ahora me espera la corona de justicia.”</strong></p>
+          <p>¿Qué se hubiera puesto en la tumba de Jesús? Si alguien hubiera escrito un epitafio, quizás: "Como el Hijo del Hombre no vino para ser servido, sino para servir, y para dar su vida en rescate por muchos" (Mateo 20:28). Pero no puede haber un epitafio en la tumba del Señor, porque Él resucitó. El epitafio de Jesús es: <strong>“¿Dónde está, oh muerte, tu aguijón? ¿Dónde, oh sepulcro, tu victoria?”</strong> (1 Corintios 15:55).</p>
+          <div class="quote"><div class="quote-text">Nuestra esperanza es firme hermanos, debido a que nuestro Señor ha resucitado. Él nos ha liberado de la esclavitud del pecado y la avaricia, de modo que hoy podemos vivir como Moisés y los demás hombres de Dios, con la mirada puesta en lo eterno, con los ojos puestos en la recompensa. Hoy podemos sostenernos como viendo al invisible. Él es nuestra esperanza, Él es una roca firme para todos aquellos que se refugian bajo sus alas. Él es el mayor tesoro. Pero recuerda: <strong>de ninguna manera puedes servir a dos señores; no puedes servir a Dios y a las riquezas.</strong></div></div>
+          <p>Si al final de tus días miras atrás, y ves que no acumulaste riquezas para ti aunque seas millonario, sino que amaste a Dios, que viviste consciente de lo temporal de la vida en esta tierra y de lo eterno de la vida con Dios, entonces podrás escoger un buen epitafio, uno que te identifique, y le hable a otros que vengan detrás de nosotros. Pero mejor aún: al cruzar las sombras de esta vida y abrazar la eternidad, encontrarás a tu Señor, quien te dirá: <strong>“Bien, buen siervo y fiel; sobre poco has sido fiel, sobre mucho te pondré; entra en el gozo de tu señor.”</strong> (Mateo 25:23).</p>
+          <p style="margin-top: 1.5rem; font-weight: 700;">Rolando Yohamed Desdín García. Oremos.</p>
         </div>
       </div>
     </main>
 
     <aside>
-      <div class="sidebar-card">
-        <h3 style="font-family: Merriweather; margin-bottom: 1rem;">Las mentiras del dinero</h3>
-        <ul style="margin-left: 1.2rem;">
-          <li>El dinero promete seguridad → te da una falsa paz</li>
-          <li>Promete identidad → te hace creer que vales por lo que tienes</li>
-          <li>Promete tiempo → te roba la eternidad</li>
-        </ul>
-        <div class="tags" style="margin-top: 1rem;">
-          <span class="tag">Avaricia</span> <span class="tag">Necio</span> <span class="tag">Tesoro en el cielo</span> <span class="tag">Servir a Dios</span> <span class="tag">Epitafio</span>
-        </div>
+      <div class="sidebar-card"><h3 style="font-family:Merriweather;">El engaño en tres frases</h3>
+        <p><i class="fas fa-ban"></i> “El dinero me dará seguridad” → <strong>Necio, esta noche</strong></p>
+        <p><i class="fas fa-ban"></i> “Valgo por lo que tengo” → <strong>La vida no consiste en bienes</strong></p>
+        <p><i class="fas fa-ban"></i> “Tengo muchos años” → <strong>Un soplo, un suspiro</strong></p>
+        <div class="tags" style="margin-top:1rem"><span class="tag">Avaricia</span> <span class="tag">Necio rico</span> <span class="tag">Tesoro en el cielo</span> <span class="tag">Epitafio</span> <span class="tag">Moisés</span> <span class="tag">Mamón</span></div>
       </div>
-
-      <div class="sidebar-card">
-        <h3 style="font-family: Merriweather;">Preguntas para el corazón</h3>
-        <p><i class="fas fa-question-circle"></i> <strong>¿En quién has puesto tu esperanza?</strong> ¿En el banco o en el Dios vivo?</p>
-        <p><i class="fas fa-hand-holding-heart"></i> <strong>¿Eres generoso?</strong> El que siembra escasamente, segará escasamente.</p>
-        <p><i class="fas fa-clock"></i> <strong>¿Tu familia recibe tu tiempo o solo tus sobras?</strong> No cambies lo invaluable por cosas que se oxidan.</p>
-        <div class="interactive" style="margin-top: 1rem; background: #e7d6c8;" onclick="alert('No podemos servir a Dios y a las riquezas. Elige hoy a quién servirás.')">Declara: Mi esperanza está en el Señor</div>
+      <div class="sidebar-card"><h3 style="font-family:Merriweather;">¿Dónde está tu corazón?</h3>
+        <p><i class="fas fa-heart"></i> <strong>“Porque donde esté vuestro tesoro, allí estará también vuestro corazón”</strong> (Lucas 12:34). Si tu tesoro es tu casa, carro, cuenta bancaria, tu corazón está allí. Si tu tesoro es Cristo, tu corazón descansa en Él.</p>
+        <div class="interactive" style="margin-top:1rem;" onclick="alert('No podemos servir a dos señores. Hoy elige a quién servirás.')">Declara: Mi esperanza está en el Señor</div>
       </div>
-
-      <div class="sidebar-card">
-        <h3 style="font-family: Merriweather;">Versículos clave</h3>
-        <p><strong>1 Timoteo 6:10:</strong> "Raíz de todos los males es el amor al dinero".</p>
-        <p><strong>Mateo 6:24:</strong> "No podéis servir a Dios y a las riquezas".</p>
-        <p><strong>Lucas 12:21:</strong> "Así es el que hace para sí tesoro, y no es rico para con Dios".</p>
-        <p><strong>2 Corintios 9:7:</strong> "Dios ama al dador alegre".</p>
+      <div class="sidebar-card"><h3 style="font-family:Merriweather;">Versículos para memorizar</h3>
+        <p>1 Timoteo 6:10: <em>“Raíz de todos los males es el amor al dinero”</em></p>
+        <p>Mateo 6:24: <em>“No podéis servir a Dios y a las riquezas”</em></p>
+        <p>Lucas 12:15: <em>“Guardaos de toda avaricia”</em></p>
+        <p>2 Corintios 9:11: <em>“Serán enriquecidos para toda generosidad”</em></p>
       </div>
     </aside>
   </div>
-
   <footer class="footer">
     <p>Iglesia Bautista de Sola — Solo Cristo Salva</p>
-    <p>“Las mentiras del dinero”: No podemos servir a Dios y a Mamón. Pongamos nuestra esperanza en el que resucitó.</p>
-    <p style="margin-top: 1rem;">Rolando Yohamed Desdín García — Estudio completo</p>
+    <p>“Las mentiras del dinero” — Nadie puede servir a dos señores. Pongamos nuestra esperanza en el Dios vivo.</p>
+    <p>Rolando Yohamed Desdín García — Estudio completo</p>
   </footer>
 </div>
-
 <script>
-  function toggleEpitafio() {
-    const el = document.getElementById('epitafioReflex');
-    el.style.display = el.style.display === 'none' ? 'block' : 'none';
-  }
-  function toggleAplicacionRico() {
-    const el = document.getElementById('aplicRico');
-    el.style.display = el.style.display === 'none' ? 'block' : 'none';
-  }
-  function toggleMoisés() {
-    const el = document.getElementById('moisesRef');
-    el.style.display = el.style.display === 'none' ? 'block' : 'none';
-  }
+  function toggleEpitafioCompleto() { let x = document.getElementById('epitafioExtra'); x.style.display = x.style.display === 'none' ? 'block' : 'none'; }
+  function toggleAvariciaIglesia() { let x = document.getElementById('avariciaIglesiaText'); x.style.display = x.style.display === 'none' ? 'block' : 'none'; }
 </script>
 </body>
 </html>
